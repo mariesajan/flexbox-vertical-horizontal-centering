@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+  <head>
+    <title>Nesting Flexbox for Horizontal and Vertical Centering</title>
+    <link rel ="stylesheet" href="build/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  </head>
+  <body>
+      <div class="wrapper">
+        <img src="img/background.jpg" />
+        <ul class="container">
+          <li class="nav_button"><a href="#" class="fa fa-arrow-left"></a></li>
+          <li class="items"><a href="#">To study flexbox</a></li>
+          <li class="items"><a href="#">Download necessary videos and documents</a></li>
+          <li class="items"><a href="#">Flexbox aims at providing more efficients way to layout, align and distribute space.</a></li>
+          <li class="items"><a href="#">The End</a></li>
+          <li class="nav_button"><a href="#" class="fa fa-arrow-right"></a></li>
+        </ul>
+      </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>
+   $(function(){
+     $('li').hover(function(){
+       $(this).css('background-color', 'red');
+     }, function(){
+       $(this).css('background-color', 'goldenrod');
+     });
+   });
+  </script>
+</html>
